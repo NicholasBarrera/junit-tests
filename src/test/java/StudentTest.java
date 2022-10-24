@@ -10,12 +10,23 @@ public class StudentTest {
     public void setup(){
         nick = new Student(1, "nick");
     }
+//    public void testGetId() {
+//
+//    }
+//
+//    public void testGetName() {
+//    }
+//
+//    public void testGetGrades() {
+//    }
+//
+//    public void testAddGrade() {
+//    }
 
-
-
-
-
-
-
-
+    @Test
+    public void testGetGradeAverage() {
+        nick.addGrade(80);
+        nick.addGrade(100);
+        assertEquals(90, nick.getGradeAverage(),0);
+    }
 }
